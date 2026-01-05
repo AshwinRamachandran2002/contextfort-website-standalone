@@ -18,7 +18,9 @@ import {
   Cpu,
   Globe,
   Twitter,
-  Linkedin
+  Linkedin,
+  Github,
+  Download
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -62,19 +64,33 @@ export default function LandingPage() {
               <Shield className="w-5 h-5 text-background" />
             </div>
             <span className="text-xl font-bold tracking-tighter">CONTEXTFORT</span>
-            <Badge variant="outline" className="ml-2 border-primary/50 text-primary text-[10px] py-0">W26</Badge>
           </div>
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
+          <div className="hidden md:flex items-center gap-6 text-sm font-medium text-muted-foreground">
             <a href="#how-it-works" className="hover:text-primary transition-colors">How it works</a>
             <a href="#features" className="hover:text-primary transition-colors">Features</a>
+            <Button 
+              variant="ghost" 
+              className="text-muted-foreground hover:text-primary"
+              asChild
+            >
+              <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2-LisBxMgnCRJ-LKKb-R3pFbF841mGLD05pQdMbsBW-4MJvb0Jy2ksFKVYziMHfKcECrF9yIHt" target="_blank" rel="noopener noreferrer">
+                Book a demo
+              </a>
+            </Button>
+            <Button 
+              variant="ghost" 
+              className="text-muted-foreground hover:text-primary"
+            >
+              Download extension
+            </Button>
+            <Button 
+              variant="ghost" 
+              className="text-muted-foreground hover:text-primary"
+            >
+              <Github className="w-4 h-4 mr-2" />
+              Github
+            </Button>
           </div>
-          <Button 
-            variant="outline" 
-            className="border-primary/50 hover:bg-primary/10"
-            onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            Join Waitlist
-          </Button>
         </div>
       </nav>
 
@@ -93,19 +109,36 @@ export default function LandingPage() {
                 <span className="text-sm font-semibold text-black tracking-tight">Combinator</span>
               </div>
               <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-tight">
-                Secure Your <br />
-                <span className="text-primary italic">Browser from AI Agents.</span>
+                Visibility and Controls <br />
+                <span className="text-primary italic">for Browser Agents</span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-lg leading-relaxed">
-                Track, analyze, and respond to AI-generated browser actions in real time
+                Get control over Comet, Atlas and CLaude chrome extension all through a simple powerful browser extension
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   size="lg" 
                   className="bg-primary text-background hover:bg-primary/90 rounded-none px-8"
-                  onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
+                  asChild
                 >
-                  Get Started <ArrowRight className="ml-2 w-4 h-4" />
+                  <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2-LisBxMgnCRJ-LKKb-R3pFbF841mGLD05pQdMbsBW-4MJvb0Jy2ksFKVYziMHfKcECrF9yIHt" target="_blank" rel="noopener noreferrer">
+                    Book a demo
+                  </a>
+                </Button>
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  className="border-primary/50 hover:bg-primary/10 rounded-none px-8 text-foreground"
+                >
+                  Download extension
+                </Button>
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  className="border-primary/50 hover:bg-primary/10 rounded-none px-8 text-foreground"
+                >
+                  <Github className="w-4 h-4 mr-2" />
+                  View github repo
                 </Button>
               </div>
               
@@ -283,10 +316,7 @@ export default function LandingPage() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
         <div className="container mx-auto px-6 relative z-10 text-center">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to see AI agent activity in your browser?</h2>
-            <p className="text-xl text-muted-foreground mb-10">
-              Join the waitlist for early access to the ContextFort SDK and start tracking AI agents today.
-            </p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-10">Want to deploy them across your enterprise or want to add more specific controls tailored for your enterprise?</h2>
             <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <Input 
                 placeholder="Enter your work email" 
@@ -298,7 +328,6 @@ export default function LandingPage() {
                 Join Waitlist
               </Button>
             </div>
-
           </div>
         </div>
       </section>
