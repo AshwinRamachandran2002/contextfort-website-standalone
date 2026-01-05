@@ -112,9 +112,23 @@ export default function LandingPage() {
                 Visibility and Controls <br />
                 <span className="text-primary italic">for Browser Agents</span>
               </h1>
-              <p className="text-xl text-muted-foreground mb-8 max-w-lg leading-relaxed">
-                Get control over Comet, Atlas and CLaude chrome extension all through a simple powerful browser extension
+              <p className="text-xl text-muted-foreground mb-4 max-w-lg leading-relaxed">
+                Through a simple and powerful browser extension
               </p>
+              <div className="flex flex-wrap gap-3 mb-8">
+                <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full hover:bg-white/10 transition-colors cursor-default">
+                  <img src="https://www.google.com/s2/favicons?sz=64&domain=perplexity.ai" className="w-5 h-5 rounded-sm" alt="Comet" />
+                  <span className="text-sm font-semibold">Comet</span>
+                </div>
+                <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full hover:bg-white/10 transition-colors cursor-default">
+                  <img src="https://www.google.com/s2/favicons?sz=64&domain=openai.com" className="w-5 h-5 rounded-sm" alt="Atlas" />
+                  <span className="text-sm font-semibold">Atlas</span>
+                </div>
+                <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full hover:bg-white/10 transition-colors cursor-default">
+                  <img src="https://www.google.com/s2/favicons?sz=64&domain=claude.ai" className="w-5 h-5 rounded-sm" alt="Claude" />
+                  <span className="text-sm font-semibold">Claude</span>
+                </div>
+              </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   size="lg" 
@@ -289,7 +303,7 @@ export default function LandingPage() {
             </div>
             <div className="order-1 lg:order-2">
               <Badge className="bg-primary text-background mb-4">CAPABILITIES</Badge>
-              <h2 className="text-4xl font-bold mb-6 leading-tight">Secure Your<br />Browser from AI Agents</h2>
+              <h2 className="text-4xl font-bold mb-6 leading-tight">Visibility and Controls<br />for Browser Agents</h2>
               <ul className="space-y-4">
                 {[
                   "Track AI agent events such as clicks, navigation etc.",
