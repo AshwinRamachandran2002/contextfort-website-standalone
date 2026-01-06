@@ -59,36 +59,36 @@ export default function LandingPage() {
       {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-background/80 backdrop-blur-md">
         <div className="container mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <a href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <div className="w-8 h-8 bg-primary flex items-center justify-center">
               <Shield className="w-5 h-5 text-background" />
             </div>
-            <span className="text-xl font-bold tracking-tighter">CONTEXTFORT</span>
-          </div>
-          <div className="hidden md:flex items-center gap-6 text-sm font-medium text-muted-foreground">
-            <a href="#how-it-works" className="hover:text-primary transition-colors">How it works</a>
-            <a href="#features" className="hover:text-primary transition-colors">Features</a>
-            <Button 
-              variant="ghost" 
-              className="text-muted-foreground hover:text-primary"
-              asChild
-            >
+            <span className="text-xl font-bold tracking-tighter uppercase">ContextFort</span>
+          </a>
+          <div className="hidden md:flex items-center gap-1 text-sm font-medium">
+            <Button variant="ghost" asChild className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="#how-it-works">How it works</a>
+            </Button>
+            <Button variant="ghost" asChild className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="#features">Features</a>
+            </Button>
+            <Button variant="ghost" asChild className="text-muted-foreground hover:text-primary transition-colors">
               <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2-LisBxMgnCRJ-LKKb-R3pFbF841mGLD05pQdMbsBW-4MJvb0Jy2ksFKVYziMHfKcECrF9yIHt" target="_blank" rel="noopener noreferrer">
                 Book a demo
               </a>
             </Button>
-            <Button 
-              variant="ghost" 
-              className="text-muted-foreground hover:text-primary"
-            >
+            <Button variant="ghost" className="text-muted-foreground hover:text-primary transition-colors">
               Download extension
             </Button>
-            <Button 
-              variant="ghost" 
-              className="text-muted-foreground hover:text-primary"
-            >
-              <Github className="w-4 h-4 mr-2" />
-              Github
+            <Button variant="ghost" asChild className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://github.com/contextfort" target="_blank" rel="noopener noreferrer">
+                <Github className="w-4 h-4 mr-2" />
+                Github
+              </a>
+            </Button>
+            <Button variant="ghost" className="text-muted-foreground hover:text-primary transition-colors">
+              <Download className="w-4 h-4 mr-2" />
+              Design Kit
             </Button>
           </div>
         </div>
