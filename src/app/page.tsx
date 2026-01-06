@@ -109,7 +109,7 @@ export default function LandingPage() {
                 <span className="text-sm font-semibold text-black tracking-tight">Combinator</span>
               </div>
               <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-tight">
-                Visibility & Controls <span className="text-primary italic">for Browser Agents</span>
+                <span className="md:whitespace-nowrap">Visibility & Controls</span> <span className="text-primary italic md:whitespace-nowrap">for Browser Agents</span>
               </h1>
               <p className="text-xl text-muted-foreground mb-4 max-w-lg leading-relaxed">
                 Through a simple and powerful browser extension
@@ -302,7 +302,9 @@ export default function LandingPage() {
             </div>
             <div className="order-1 lg:order-2">
               <Badge className="bg-primary text-background mb-4">CAPABILITIES</Badge>
-              <h2 className="text-4xl font-bold mb-6 leading-tight">Visibility & Controls <span className="text-primary italic">for Browser Agents</span></h2>
+              <h2 className="text-4xl font-bold mb-6 leading-tight">
+                <span className="md:whitespace-nowrap">Visibility & Controls</span> <span className="text-primary italic md:whitespace-nowrap">for Browser Agents</span>
+              </h2>
               <ul className="space-y-4">
                 {[
                   "Track AI agent events such as clicks, navigation etc.",

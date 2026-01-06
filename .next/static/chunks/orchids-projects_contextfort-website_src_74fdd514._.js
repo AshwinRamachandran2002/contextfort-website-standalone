@@ -665,16 +665,26 @@ function LandingPage() {
                                         "data-orchids-name": "h1",
                                         className: "text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-tight",
                                         children: [
-                                            "Visibility & Controls ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                "data-orchids-id": "src/app/page.tsx:112:38",
+                                                "data-orchids-id": "src/app/page.tsx:112:16",
                                                 "data-orchids-name": "span",
-                                                className: "text-primary italic",
+                                                className: "md:whitespace-nowrap",
+                                                children: "Visibility & Controls"
+                                            }, void 0, false, {
+                                                fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
+                                                lineNumber: 112,
+                                                columnNumber: 17
+                                            }, this),
+                                            " ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                "data-orchids-id": "src/app/page.tsx:112:84",
+                                                "data-orchids-name": "span",
+                                                className: "text-primary italic md:whitespace-nowrap",
                                                 children: "for Browser Agents"
                                             }, void 0, false, {
                                                 fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
                                                 lineNumber: 112,
-                                                columnNumber: 39
+                                                columnNumber: 152
                                             }, this)
                                         ]
                                     }, void 0, true, {
@@ -1603,16 +1613,26 @@ function LandingPage() {
                                         "data-orchids-name": "h2",
                                         className: "text-4xl font-bold mb-6 leading-tight",
                                         children: [
-                                            "Visibility & Controls ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                "data-orchids-id": "src/app/page.tsx:305:90",
+                                                "data-orchids-id": "src/app/page.tsx:306:16",
                                                 "data-orchids-name": "span",
-                                                className: "text-primary italic",
+                                                className: "md:whitespace-nowrap",
+                                                children: "Visibility & Controls"
+                                            }, void 0, false, {
+                                                fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
+                                                lineNumber: 306,
+                                                columnNumber: 17
+                                            }, this),
+                                            " ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                "data-orchids-id": "src/app/page.tsx:306:84",
+                                                "data-orchids-name": "span",
+                                                className: "text-primary italic md:whitespace-nowrap",
                                                 children: "for Browser Agents"
                                             }, void 0, false, {
                                                 fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                                                lineNumber: 305,
-                                                columnNumber: 156
+                                                lineNumber: 306,
+                                                columnNumber: 152
                                             }, this)
                                         ]
                                     }, void 0, true, {
@@ -1621,7 +1641,7 @@ function LandingPage() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                        "data-orchids-id": "src/app/page.tsx:306:14",
+                                        "data-orchids-id": "src/app/page.tsx:308:14",
                                         "data-orchids-name": "ul",
                                         className: "space-y-4",
                                         children: [
@@ -1631,47 +1651,47 @@ function LandingPage() {
                                             "Session-level visibility into AI activity",
                                             "Block specific AI-driven actions"
                                         ].map((item, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                "data-orchids-id": "src/app/page.tsx:314:18",
+                                                "data-orchids-id": "src/app/page.tsx:316:18",
                                                 "data-orchids-name": "li",
                                                 className: "flex items-center gap-3",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        "data-orchids-id": "src/app/page.tsx:315:20",
+                                                        "data-orchids-id": "src/app/page.tsx:317:20",
                                                         "data-orchids-name": "div",
                                                         className: "w-5 h-5 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
-                                                            "data-orchids-id": "src/app/page.tsx:316:22",
+                                                            "data-orchids-id": "src/app/page.tsx:318:22",
                                                             "data-orchids-name": "CheckCircle2",
                                                             className: "w-3 h-3 text-primary"
                                                         }, void 0, false, {
                                                             fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                                                            lineNumber: 316,
+                                                            lineNumber: 318,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                                                        lineNumber: 315,
+                                                        lineNumber: 317,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        "data-orchids-id": "src/app/page.tsx:318:20",
+                                                        "data-orchids-id": "src/app/page.tsx:320:20",
                                                         "data-orchids-name": "span",
                                                         className: "text-muted-foreground text-sm",
                                                         children: item
                                                     }, void 0, false, {
                                                         fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                                                        lineNumber: 318,
+                                                        lineNumber: 320,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, i, true, {
                                                 fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                                                lineNumber: 314,
+                                                lineNumber: 316,
                                                 columnNumber: 19
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                                        lineNumber: 306,
+                                        lineNumber: 308,
                                         columnNumber: 15
                                     }, this)
                                 ]
@@ -1697,46 +1717,46 @@ function LandingPage() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                "data-orchids-id": "src/app/page.tsx:328:6",
+                "data-orchids-id": "src/app/page.tsx:330:6",
                 "data-orchids-name": "section",
                 id: "waitlist",
                 className: "py-24 relative overflow-hidden",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        "data-orchids-id": "src/app/page.tsx:329:8",
+                        "data-orchids-id": "src/app/page.tsx:331:8",
                         "data-orchids-name": "div",
                         className: "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px] pointer-events-none"
                     }, void 0, false, {
                         fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                        lineNumber: 329,
+                        lineNumber: 331,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        "data-orchids-id": "src/app/page.tsx:330:8",
+                        "data-orchids-id": "src/app/page.tsx:332:8",
                         "data-orchids-name": "div",
                         className: "container mx-auto px-6 relative z-10 text-center",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            "data-orchids-id": "src/app/page.tsx:331:10",
+                            "data-orchids-id": "src/app/page.tsx:333:10",
                             "data-orchids-name": "div",
                             className: "max-w-3xl mx-auto",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    "data-orchids-id": "src/app/page.tsx:332:12",
+                                    "data-orchids-id": "src/app/page.tsx:334:12",
                                     "data-orchids-name": "h2",
                                     className: "text-4xl md:text-5xl font-bold mb-10",
                                     children: "Want to deploy them across your enterprise or want to add more specific controls tailored for your enterprise?"
                                 }, void 0, false, {
                                     fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                                    lineNumber: 332,
+                                    lineNumber: 334,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    "data-orchids-id": "src/app/page.tsx:333:12",
+                                    "data-orchids-id": "src/app/page.tsx:335:12",
                                     "data-orchids-name": "div",
                                     className: "flex flex-col sm:flex-row gap-3 max-w-md mx-auto",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
-                                            "data-orchids-id": "src/app/page.tsx:334:14",
+                                            "data-orchids-id": "src/app/page.tsx:336:14",
                                             "data-orchids-name": "Input",
                                             placeholder: "Enter your work email",
                                             className: "bg-white/5 border-white/10 h-12 rounded-none focus-visible:ring-primary",
@@ -1744,172 +1764,172 @@ function LandingPage() {
                                             onChange: (e)=>setEmail(e.target.value)
                                         }, void 0, false, {
                                             fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                                            lineNumber: 334,
+                                            lineNumber: 336,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                                            "data-orchids-id": "src/app/page.tsx:340:14",
+                                            "data-orchids-id": "src/app/page.tsx:342:14",
                                             "data-orchids-name": "Button",
                                             size: "lg",
                                             className: "bg-primary text-background hover:bg-primary/90 h-12 rounded-none px-8 font-bold",
                                             children: "Join Waitlist"
                                         }, void 0, false, {
                                             fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                                            lineNumber: 340,
+                                            lineNumber: 342,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                                    lineNumber: 333,
+                                    lineNumber: 335,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                            lineNumber: 331,
+                            lineNumber: 333,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                        lineNumber: 330,
+                        lineNumber: 332,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                lineNumber: 328,
+                lineNumber: 330,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
-                "data-orchids-id": "src/app/page.tsx:349:6",
+                "data-orchids-id": "src/app/page.tsx:351:6",
                 "data-orchids-name": "footer",
                 className: "py-12 border-t border-white/5",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    "data-orchids-id": "src/app/page.tsx:350:8",
+                    "data-orchids-id": "src/app/page.tsx:352:8",
                     "data-orchids-name": "div",
                     className: "container mx-auto px-6",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        "data-orchids-id": "src/app/page.tsx:351:10",
+                        "data-orchids-id": "src/app/page.tsx:353:10",
                         "data-orchids-name": "div",
                         className: "flex flex-col md:flex-row justify-between items-center gap-8",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                "data-orchids-id": "src/app/page.tsx:352:12",
+                                "data-orchids-id": "src/app/page.tsx:354:12",
                                 "data-orchids-name": "div",
                                 className: "flex items-center gap-2",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        "data-orchids-id": "src/app/page.tsx:353:14",
+                                        "data-orchids-id": "src/app/page.tsx:355:14",
                                         "data-orchids-name": "div",
                                         className: "w-6 h-6 bg-primary flex items-center justify-center",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__["Shield"], {
-                                            "data-orchids-id": "src/app/page.tsx:354:16",
+                                            "data-orchids-id": "src/app/page.tsx:356:16",
                                             "data-orchids-name": "Shield",
                                             className: "w-4 h-4 text-background"
                                         }, void 0, false, {
                                             fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                                            lineNumber: 354,
+                                            lineNumber: 356,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                                        lineNumber: 353,
+                                        lineNumber: 355,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        "data-orchids-id": "src/app/page.tsx:356:14",
+                                        "data-orchids-id": "src/app/page.tsx:358:14",
                                         "data-orchids-name": "span",
                                         className: "text-lg font-bold tracking-tighter uppercase",
                                         children: "ContextFort"
                                     }, void 0, false, {
                                         fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                                        lineNumber: 356,
+                                        lineNumber: 358,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                                lineNumber: 352,
+                                lineNumber: 354,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                "data-orchids-id": "src/app/page.tsx:358:0",
+                                "data-orchids-id": "src/app/page.tsx:360:0",
                                 "data-orchids-name": "div",
                                 className: "flex gap-6 text-muted-foreground",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        "data-orchids-id": "src/app/page.tsx:359:16",
+                                        "data-orchids-id": "src/app/page.tsx:361:16",
                                         "data-orchids-name": "a",
                                         href: "https://x.com/ContextFort",
                                         target: "_blank",
                                         rel: "noopener noreferrer",
                                         className: "hover:text-primary transition-colors",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$twitter$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Twitter$3e$__["Twitter"], {
-                                            "data-orchids-id": "src/app/page.tsx:360:18",
+                                            "data-orchids-id": "src/app/page.tsx:362:18",
                                             "data-orchids-name": "Twitter",
                                             className: "w-5 h-5"
                                         }, void 0, false, {
                                             fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                                            lineNumber: 360,
+                                            lineNumber: 362,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                                        lineNumber: 359,
+                                        lineNumber: 361,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        "data-orchids-id": "src/app/page.tsx:362:16",
+                                        "data-orchids-id": "src/app/page.tsx:364:16",
                                         "data-orchids-name": "a",
                                         href: "https://www.linkedin.com/company/contextfort/",
                                         target: "_blank",
                                         rel: "noopener noreferrer",
                                         className: "hover:text-primary transition-colors",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$linkedin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Linkedin$3e$__["Linkedin"], {
-                                            "data-orchids-id": "src/app/page.tsx:363:18",
+                                            "data-orchids-id": "src/app/page.tsx:365:18",
                                             "data-orchids-name": "Linkedin",
                                             className: "w-5 h-5"
                                         }, void 0, false, {
                                             fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                                            lineNumber: 363,
+                                            lineNumber: 365,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                                        lineNumber: 362,
+                                        lineNumber: 364,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                                lineNumber: 358,
+                                lineNumber: 360,
                                 columnNumber: 1
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                "data-orchids-id": "src/app/page.tsx:366:12",
+                                "data-orchids-id": "src/app/page.tsx:368:12",
                                 "data-orchids-name": "p",
                                 className: "text-xs text-muted-foreground",
                                 children: "© 2026 Context Fort, Inc. All rights reserved."
                             }, void 0, false, {
                                 fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                                lineNumber: 366,
+                                lineNumber: 368,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                        lineNumber: 351,
+                        lineNumber: 353,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                    lineNumber: 350,
+                    lineNumber: 352,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/orchids-projects/contextfort-website/src/app/page.tsx",
-                lineNumber: 349,
+                lineNumber: 351,
                 columnNumber: 7
             }, this)
         ]
