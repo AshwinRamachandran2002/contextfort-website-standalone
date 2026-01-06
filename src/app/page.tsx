@@ -86,9 +86,11 @@ export default function LandingPage() {
                 Github
               </a>
             </Button>
-            <Button variant="ghost" className="text-muted-foreground hover:text-primary transition-colors">
-              <Download className="w-4 h-4 mr-2" />
-              Design Kit
+            <Button variant="ghost" asChild className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="/design-kit">
+                <Download className="w-4 h-4 mr-2" />
+                Design Kit
+              </a>
             </Button>
           </div>
         </div>
