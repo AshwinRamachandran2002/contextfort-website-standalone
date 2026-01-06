@@ -1,0 +1,22 @@
+# ContextFort Brand Guidelines v1.0
+
+## Brand Identity
+ContextFort provides visibility and controls for browser agents. Our brand is technical, secure, and forward-thinking.
+
+## Color Palette
+- Primary Neon: #4ADE80 (oklch(0.7 0.2 150))
+- Background: #0D0D0D (oklch(0.05 0 0))
+- Card Surface: #1A1A1A (oklch(0.1 0 0))
+- Muted: #999999 (oklch(0.6 0 0))
+
+## Typography
+- Headings: Space Grotesk
+- UI/Code: JetBrains Mono
+
+## Logo Usage
+- Use the shield icon for small footprints (avatars, favicons).
+- Use the full logotype for headers and primary branding.
+- Maintain clear space around the logo equivalent to the height of the shield.
+
+## Voice and Tone
+- Precise, Technical, Authoritative, Minimalist.
