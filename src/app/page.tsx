@@ -331,7 +331,10 @@ export default function LandingPage() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
         <div className="container mx-auto px-6 relative z-10 text-center">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold mb-10">Want to deploy them across your enterprise or want to add more specific controls tailored for your enterprise?</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Scale across your enterprise</h2>
+            <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
+              Custom-tailored controls and seamless deployment for large-scale organizations.
+            </p>
             <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <Input 
                 placeholder="Enter your work email" 
