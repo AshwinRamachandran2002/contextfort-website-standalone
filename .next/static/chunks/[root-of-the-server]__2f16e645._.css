@@ -1653,6 +1653,10 @@
     cursor: default;
   }
 
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
   .cursor-text {
     cursor: text;
   }

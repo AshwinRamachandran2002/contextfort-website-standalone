@@ -78,8 +78,10 @@ export default function DesignKitPage() {
                 <Shield className="w-12 h-12 text-background" />
               </div>
               <p className="font-mono text-xs text-muted-foreground mb-4 uppercase tracking-widest">Primary Mark</p>
-              <Button size="sm" variant="outline" className="rounded-none border-white/10 hover:bg-white/10">
-                <Download className="w-4 h-4 mr-2" /> Download SVG
+              <Button size="sm" variant="outline" className="rounded-none border-white/10 hover:bg-white/10" asChild>
+                <a href="/logo.svg" download="contextfort-logo.svg">
+                  <Download className="w-4 h-4 mr-2" /> Download SVG
+                </a>
               </Button>
             </Card>
             <Card className="bg-white/5 border-white/10 p-12 flex flex-col items-center justify-center group relative overflow-hidden">
@@ -91,8 +93,10 @@ export default function DesignKitPage() {
                 <span className="text-3xl font-bold tracking-tighter uppercase">ContextFort</span>
               </div>
               <p className="font-mono text-xs text-muted-foreground mb-4 uppercase tracking-widest">Full Logotype</p>
-              <Button size="sm" variant="outline" className="rounded-none border-white/10 hover:bg-white/10">
-                <Download className="w-4 h-4 mr-2" /> Download PNG
+              <Button size="sm" variant="outline" className="rounded-none border-white/10 hover:bg-white/10" asChild>
+                <a href="/logo.svg" download="contextfort-logotype.png">
+                  <Download className="w-4 h-4 mr-2" /> Download PNG
+                </a>
               </Button>
             </Card>
           </div>
@@ -106,7 +110,11 @@ export default function DesignKitPage() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {COLORS.map((color) => (
-              <Card key={color.name} className="bg-white/5 border-white/10 overflow-hidden group">
+              <Card 
+                key={color.name} 
+                className="bg-white/5 border-white/10 overflow-hidden group cursor-pointer hover:border-primary/50 transition-colors"
+                onClick={() => copyToClipboard(color.hex)}
+              >
                 <div 
                   className="h-32 w-full transition-transform group-hover:scale-105 duration-500" 
                   style={{ backgroundColor: color.value }}
@@ -116,12 +124,9 @@ export default function DesignKitPage() {
                   <p className="text-xs text-muted-foreground mb-4 leading-relaxed">{color.desc}</p>
                   <div className="flex items-center justify-between font-mono text-xs bg-black/40 p-2 rounded">
                     <span className="text-primary">{color.hex}</span>
-                    <button 
-                      onClick={() => copyToClipboard(color.hex)}
-                      className="hover:text-primary transition-colors"
-                    >
-                      {copied === color.hex ? <Check className="w-3 h-3" /> : <Copy className="w-3 h-3" />}
-                    </button>
+                    <div className="hover:text-primary transition-colors">
+                      {copied === color.hex ? <Check className="w-3 h-3 text-primary" /> : <Copy className="w-3 h-3" />}
+                    </div>
                   </div>
                 </div>
               </Card>
@@ -136,9 +141,15 @@ export default function DesignKitPage() {
             <h2 className="text-3xl font-bold">Typography</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="bg-white/5 border-white/10 p-8">
+            <Card 
+              className="bg-white/5 border-white/10 p-8 cursor-pointer hover:border-primary/50 transition-colors"
+              onClick={() => copyToClipboard("Space Grotesk")}
+            >
               <Badge variant="outline" className="mb-6 border-primary/20 text-primary">Heading / Sans</Badge>
-              <h3 className="text-4xl font-bold mb-4 font-sans">Space Grotesk</h3>
+              <h3 className="text-4xl font-bold mb-4 font-sans flex items-center justify-between">
+                Space Grotesk
+                {copied === "Space Grotesk" && <Check className="w-5 h-5 text-primary" />}
+              </h3>
               <p className="text-muted-foreground mb-8 text-sm">A geometric sans-serif that reflects our technical yet human-centric approach.</p>
               <div className="space-y-4 font-sans">
                 <p className="text-2xl font-bold tracking-tight">The quick brown fox jumps over the lazy dog.</p>
@@ -147,9 +158,15 @@ export default function DesignKitPage() {
                 <p className="text-lg">0123456789!@#$%^&*()</p>
               </div>
             </Card>
-            <Card className="bg-white/5 border-white/10 p-8">
+            <Card 
+              className="bg-white/5 border-white/10 p-8 cursor-pointer hover:border-primary/50 transition-colors"
+              onClick={() => copyToClipboard("JetBrains Mono")}
+            >
               <Badge variant="outline" className="mb-6 border-primary/20 text-primary">UI / Mono</Badge>
-              <h3 className="text-4xl font-bold mb-4 font-mono">JetBrains Mono</h3>
+              <h3 className="text-4xl font-bold mb-4 font-mono flex items-center justify-between">
+                JetBrains Mono
+                {copied === "JetBrains Mono" && <Check className="w-5 h-5 text-primary" />}
+              </h3>
               <p className="text-muted-foreground mb-8 text-sm">Optimized for reading code and technical data in our detection feeds.</p>
               <div className="space-y-4 font-mono">
                 <p className="text-xl font-bold">const detect = (agent) =&gt; true;</p>
@@ -168,9 +185,11 @@ export default function DesignKitPage() {
             <p className="text-lg font-medium mb-8 opacity-80 max-w-xl">
               Download the complete brand kit including high-resolution assets, guidelines, and presentation templates.
             </p>
-            <Button size="lg" className="bg-background text-primary hover:bg-background/90 rounded-none px-12 font-bold h-14 text-lg">
-              <Download className="w-5 h-5 mr-3" />
-              Download Full Brand Kit (.ZIP)
+            <Button size="lg" className="bg-background text-primary hover:bg-background/90 rounded-none px-12 font-bold h-14 text-lg" asChild>
+              <a href="/contextfort-brand-kit.zip" download>
+                <Download className="w-5 h-5 mr-3" />
+                Download Full Brand Kit (.ZIP)
+              </a>
             </Button>
             <p className="mt-6 text-sm font-bold opacity-60">Version 1.0.4 • 12.4 MB</p>
           </Card>
