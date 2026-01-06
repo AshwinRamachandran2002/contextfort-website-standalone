@@ -78,27 +78,27 @@ export default function DesignKitPage() {
                 <Shield className="w-12 h-12 text-background" />
               </div>
               <p className="font-mono text-xs text-muted-foreground mb-4 uppercase tracking-widest">Primary Mark</p>
-              <Button size="sm" variant="outline" className="rounded-none border-white/10 hover:bg-white/10" asChild>
-                <a href="/logo.svg" download="contextfort-logo.svg">
-                  <Download className="w-4 h-4 mr-2" /> Download SVG
-                </a>
-              </Button>
-            </Card>
-              <Card className="bg-white/5 border-white/10 p-12 flex flex-col items-center justify-center group relative overflow-hidden">
-                <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                <div className="flex items-center gap-4 mb-8 scale-125">
-                  <div className="w-10 h-10 bg-primary flex items-center justify-center">
-                    <Shield className="w-6 h-6 text-background" />
-                  </div>
-                  <span className="text-3xl font-bold tracking-tighter uppercase">ContextFort</span>
-                </div>
-                <p className="font-mono text-xs text-muted-foreground mb-4 uppercase tracking-widest">Full Logotype</p>
                 <Button size="sm" variant="outline" className="rounded-none border-white/10 hover:bg-white/10" asChild>
-                  <a href="/logo.svg" download="contextfort-logotype.svg">
+                  <a href="/logo-icon.svg" download="contextfort-logo.svg">
                     <Download className="w-4 h-4 mr-2" /> Download SVG
                   </a>
                 </Button>
               </Card>
+                <Card className="bg-white/5 border-white/10 p-12 flex flex-col items-center justify-center group relative overflow-hidden">
+                  <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="flex items-center gap-4 mb-8 scale-125">
+                    <div className="w-10 h-10 bg-primary flex items-center justify-center">
+                      <Shield className="w-6 h-6 text-background" />
+                    </div>
+                    <span className="text-3xl font-bold tracking-tighter uppercase">ContextFort</span>
+                  </div>
+                  <p className="font-mono text-xs text-muted-foreground mb-4 uppercase tracking-widest">Full Logotype</p>
+                  <Button size="sm" variant="outline" className="rounded-none border-white/10 hover:bg-white/10" asChild>
+                    <a href="/logo-full.svg" download="contextfort-logotype.svg">
+                      <Download className="w-4 h-4 mr-2" /> Download SVG
+                    </a>
+                  </Button>
+                </Card>
           </div>
         </section>
 
@@ -191,7 +191,7 @@ export default function DesignKitPage() {
                   Download Full Brand Kit (.ZIP)
                 </a>
               </Button>
-              <p className="mt-6 text-sm font-bold opacity-60">Version 1.0.1 • 1 KB</p>
+                <p className="mt-6 text-sm font-bold opacity-60">Version 1.1.0 • 2 KB</p>
           </Card>
         </section>
 
