@@ -265,31 +265,13 @@ export default function LandingPage() {
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-4">
-                  <div className="bg-primary/5 border border-primary/20 p-6">
-                    <Eye className="w-8 h-8 text-primary mb-4" />
-                    <h4 className="font-bold mb-2">AI Agent Tracking</h4>
-                    <p className="text-xs text-muted-foreground">Monitor every click, scroll, and navigation event dispatched by AI agents in real-time.</p>
-                  </div>
-                  <div className="bg-white/5 border border-white/10 p-6 mt-4">
-                    <Lock className="w-8 h-8 text-primary mb-4" />
-                    <h4 className="font-bold mb-2">Context Verification</h4>
-                    <p className="text-xs text-muted-foreground">Detect and prevent mixing of sensitive context when agents navigate across multiple pages.</p>
-                  </div>
-                </div>
-                <div className="space-y-4 pt-8">
-                  <div className="bg-white/5 border border-white/10 p-6">
-                    <Zap className="w-8 h-8 text-primary mb-4" />
-                    <h4 className="font-bold mb-2">Behavioral Analysis</h4>
-                    <p className="text-xs text-muted-foreground">Identify interaction patterns that distinguish generative agents from human behavior.</p>
-                  </div>
-                  <div className="bg-primary/5 border border-primary/20 p-6 mt-4">
-                    <Globe className="w-8 h-8 text-primary mb-4" />
-                    <h4 className="font-bold mb-2">Granular Control</h4>
-                    <p className="text-xs text-muted-foreground">Block specific AI-driven actions while maintaining a seamless experience for real users.</p>
-                  </div>
-                </div>
+              <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-2xl">
+                <iframe
+                  src="https://www.youtube.com/embed/TRc0z_qcze0?autoplay=1&mute=1&loop=1&playlist=TRc0z_qcze0&controls=0&modestbranding=1&rel=0"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                  className="absolute inset-0 h-full w-full"
+                />
               </div>
             </div>
             <div className="order-1 lg:order-2">
