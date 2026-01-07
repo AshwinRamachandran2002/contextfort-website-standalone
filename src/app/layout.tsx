@@ -14,8 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ContextFort | AI Agent Detector",
+  title: "ContextFort",
   description: "Detect and track AI browser agents in real-time. Protect your context from automated browser agents.",
+  icons: {
+    icon: "/logo-icon.svg",
+  },
 };
 
 export default function RootLayout({

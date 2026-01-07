@@ -74,37 +74,40 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$conte
 ;
 ;
 const metadata = {
-    title: "ContextFort | AI Agent Detector",
-    description: "Detect and track AI browser agents in real-time. Protect your context from automated browser agents."
+    title: "ContextFort",
+    description: "Detect and track AI browser agents in real-time. Protect your context from automated browser agents.",
+    icons: {
+        icon: "/logo-icon.svg"
+    }
 };
 function RootLayout({ children }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("html", {
-        "data-orchids-id": "src/app/layout.tsx:27:4",
+        "data-orchids-id": "src/app/layout.tsx:30:4",
         "data-orchids-name": "html",
         lang: "en",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
-            "data-orchids-id": "src/app/layout.tsx:28:6",
+            "data-orchids-id": "src/app/layout.tsx:31:6",
             "data-orchids-name": "body",
             className: `${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$geist_a71539c9$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable} ${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$geist_mono_8d43a2aa$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable} antialiased`,
             children: [
                 children,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$orchids$2d$visual$2d$edits$2f$dist$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["VisualEditsMessenger"], {
-                    "data-orchids-id": "src/app/layout.tsx:32:8",
+                    "data-orchids-id": "src/app/layout.tsx:35:8",
                     "data-orchids-name": "VisualEditsMessenger"
                 }, void 0, false, {
                     fileName: "[project]/orchids-projects/contextfort-website/src/app/layout.tsx",
-                    lineNumber: 32,
+                    lineNumber: 35,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/orchids-projects/contextfort-website/src/app/layout.tsx",
-            lineNumber: 28,
+            lineNumber: 31,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/orchids-projects/contextfort-website/src/app/layout.tsx",
-        lineNumber: 27,
+        lineNumber: 30,
         columnNumber: 5
     }, this);
 }
