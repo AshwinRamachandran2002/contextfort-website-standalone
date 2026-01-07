@@ -862,7 +862,7 @@ function LandingPage() {
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$orchids$2d$projects$2f$contextfort$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                     "data-orchids-id": "src/app/page.tsx:144:20",
                                                     "data-orchids-name": "a",
-                                                    href: "https://github.com/caffienet0code/agents-blocker/",
+                                                    href: "https://github.com/ContextFort-AI/ContextFort",
                                                     target: "_blank",
                                                     rel: "noopener noreferrer",
                                                     children: [

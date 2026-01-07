@@ -141,7 +141,7 @@ export default function LandingPage() {
                     className="border-primary/50 hover:bg-primary/10 rounded-none px-8 text-foreground"
                     asChild
                   >
-                    <a href="https://github.com/caffienet0code/agents-blocker/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/ContextFort-AI/ContextFort" target="_blank" rel="noopener noreferrer">
                       <Github className="w-4 h-4 mr-2" />
                       View github repo
                     </a>
