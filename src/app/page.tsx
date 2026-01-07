@@ -157,6 +157,64 @@ export default function LandingPage() {
               transition={{ duration: 1, delay: 0.2 }}
               className="relative"
             >
+              <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-2xl">
+                <iframe
+                  src="https://www.youtube.com/embed/TRc0z_qcze0?autoplay=1&mute=1&loop=1&playlist=TRc0z_qcze0&controls=0&modestbranding=1&rel=0"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                  className="absolute inset-0 h-full w-full"
+                />
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section id="how-it-works" className="py-24 border-t border-white/5">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold mb-4">How it works</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              We analyze interaction behavior to separate AI agents from humans
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                icon: <Activity className="w-6 h-6" />,
+                title: "Event Micro-analysis",
+                desc: "Tracking millisecond precision in DOM interactions and event dispatch sequences."
+              },
+              {
+                icon: <Layers className="w-6 h-6" />,
+                title: "Agent Signature Bank",
+                desc: "Heuristic matching against known agent frameworks like Playwright, Puppeteer, and Selenium."
+              },
+              {
+                icon: <Cpu className="w-6 h-6" />,
+                title: "Behavioral Prediction",
+                desc: "Using lightweight on-device ML to predict if the next sequence of events matches 'agent intent'."
+              }
+            ].map((feature, i) => (
+              <Card key={i} className="bg-white/5 border-white/10 p-8 hover:border-primary/50 transition-colors group">
+                <div className="w-12 h-12 bg-primary/10 flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-background transition-colors">
+                  {feature.icon}
+                </div>
+                <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{feature.desc}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Detail */}
+      <section id="features" className="py-24 bg-white/[0.02]">
+        <div className="container mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="order-2 lg:order-1">
               {/* Radar Visual */}
               <div className="aspect-square relative flex items-center justify-center">
                 <div className="absolute inset-0 bg-primary/5 rounded-full animate-pulse" />
@@ -215,64 +273,6 @@ export default function LandingPage() {
                     </div>
                   </Card>
                 </div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* How It Works */}
-      <section id="how-it-works" className="py-24 border-t border-white/5">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">How it works</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              We analyze interaction behavior to separate AI agents from humans
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: <Activity className="w-6 h-6" />,
-                title: "Event Micro-analysis",
-                desc: "Tracking millisecond precision in DOM interactions and event dispatch sequences."
-              },
-              {
-                icon: <Layers className="w-6 h-6" />,
-                title: "Agent Signature Bank",
-                desc: "Heuristic matching against known agent frameworks like Playwright, Puppeteer, and Selenium."
-              },
-              {
-                icon: <Cpu className="w-6 h-6" />,
-                title: "Behavioral Prediction",
-                desc: "Using lightweight on-device ML to predict if the next sequence of events matches 'agent intent'."
-              }
-            ].map((feature, i) => (
-              <Card key={i} className="bg-white/5 border-white/10 p-8 hover:border-primary/50 transition-colors group">
-                <div className="w-12 h-12 bg-primary/10 flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-background transition-colors">
-                  {feature.icon}
-                </div>
-                <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{feature.desc}</p>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Features Detail */}
-      <section id="features" className="py-24 bg-white/[0.02]">
-        <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="order-2 lg:order-1">
-              <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-2xl">
-                <iframe
-                  src="https://www.youtube.com/embed/TRc0z_qcze0?autoplay=1&mute=1&loop=1&playlist=TRc0z_qcze0&controls=0&modestbranding=1&rel=0"
-                  allow="autoplay; encrypted-media"
-                  allowFullScreen
-                  className="absolute inset-0 h-full w-full"
-                />
               </div>
             </div>
             <div className="order-1 lg:order-2">
