@@ -19,8 +19,7 @@ import {
   Globe,
   Twitter,
   Linkedin,
-  Github,
-  Download
+  Github
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -72,25 +71,13 @@ export default function LandingPage() {
             <Button variant="ghost" asChild className="text-muted-foreground hover:text-primary transition-colors">
               <a href="#features">Features</a>
             </Button>
-            <Button variant="ghost" asChild className="text-muted-foreground hover:text-primary transition-colors">
+            <Button asChild className="bg-primary text-background hover:bg-primary/90 rounded-none transition-colors">
               <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2-LisBxMgnCRJ-LKKb-R3pFbF841mGLD05pQdMbsBW-4MJvb0Jy2ksFKVYziMHfKcECrF9yIHt" target="_blank" rel="noopener noreferrer">
                 Book a demo
               </a>
             </Button>
-            <Button variant="ghost" className="text-muted-foreground hover:text-primary transition-colors">
+            <Button className="bg-primary text-background hover:bg-primary/90 rounded-none transition-colors">
               Download extension
-            </Button>
-            <Button variant="ghost" asChild className="text-muted-foreground hover:text-primary transition-colors">
-              <a href="https://github.com/contextfort" target="_blank" rel="noopener noreferrer">
-                <Github className="w-4 h-4 mr-2" />
-                Github
-              </a>
-            </Button>
-            <Button variant="ghost" asChild className="text-muted-foreground hover:text-primary transition-colors">
-              <a href="/design-kit">
-                <Download className="w-4 h-4 mr-2" />
-                Design Kit
-              </a>
             </Button>
           </div>
         </div>
