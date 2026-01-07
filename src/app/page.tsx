@@ -58,13 +58,13 @@ export default function LandingPage() {
       {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-background/80 backdrop-blur-md">
         <div className="container mx-auto px-6 h-16 flex items-center justify-between">
-          <a href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+          <a href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <div className="w-8 h-8 bg-primary flex items-center justify-center">
               <Shield className="w-5 h-5 text-background" />
             </div>
             <span className="text-xl font-bold tracking-tighter uppercase">ContextFort</span>
           </a>
-          <div className="hidden md:flex items-center gap-1 text-sm font-medium">
+          <div className="hidden md:flex items-center gap-4 text-sm font-medium">
             <Button variant="ghost" asChild className="text-muted-foreground hover:text-primary transition-colors">
               <a href="#how-it-works">How it works</a>
             </Button>
@@ -77,7 +77,7 @@ export default function LandingPage() {
               </a>
             </Button>
             <Button className="bg-primary text-background hover:bg-primary/90 rounded-none transition-colors">
-              Download extension
+              Try chrome extension
             </Button>
           </div>
         </div>
@@ -117,32 +117,35 @@ export default function LandingPage() {
                   <span className="text-sm font-semibold">Claude</span>
                 </div>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  size="lg" 
-                  className="bg-primary text-background hover:bg-primary/90 rounded-none px-8"
-                  asChild
-                >
-                  <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2-LisBxMgnCRJ-LKKb-R3pFbF841mGLD05pQdMbsBW-4MJvb0Jy2ksFKVYziMHfKcECrF9yIHt" target="_blank" rel="noopener noreferrer">
-                    Book a demo
-                  </a>
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  className="border-primary/50 hover:bg-primary/10 rounded-none px-8 text-foreground"
-                >
-                  Download extension
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  className="border-primary/50 hover:bg-primary/10 rounded-none px-8 text-foreground"
-                >
-                  <Github className="w-4 h-4 mr-2" />
-                  View github repo
-                </Button>
-              </div>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button 
+                    size="lg" 
+                    className="bg-primary text-background hover:bg-primary/90 rounded-none px-8"
+                    asChild
+                  >
+                    <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2-LisBxMgnCRJ-LKKb-R3pFbF841mGLD05pQdMbsBW-4MJvb0Jy2ksFKVYziMHfKcECrF9yIHt" target="_blank" rel="noopener noreferrer">
+                      Book a demo
+                    </a>
+                  </Button>
+                  <Button 
+                    size="lg" 
+                    variant="outline"
+                    className="border-primary/50 hover:bg-primary/10 rounded-none px-8 text-foreground"
+                  >
+                    Try chrome extension
+                  </Button>
+                  <Button 
+                    size="lg" 
+                    variant="outline"
+                    className="border-primary/50 hover:bg-primary/10 rounded-none px-8 text-foreground"
+                    asChild
+                  >
+                    <a href="https://github.com/caffienet0code/agents-blocker/" target="_blank" rel="noopener noreferrer">
+                      <Github className="w-4 h-4 mr-2" />
+                      View github repo
+                    </a>
+                  </Button>
+                </div>
               
 
             </motion.div>
