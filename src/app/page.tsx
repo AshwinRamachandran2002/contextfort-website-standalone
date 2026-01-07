@@ -103,7 +103,8 @@ export default function LandingPage() {
               <p className="text-xl text-muted-foreground mb-4 max-w-lg leading-relaxed">
                 Through a simple and powerful browser extension
               </p>
-              <div className="flex flex-wrap gap-3 mb-8">
+              <div className="flex flex-wrap items-center gap-3 mb-8">
+                <span className="text-sm text-muted-foreground font-medium">Purpose built for:</span>
                 <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full hover:bg-white/10 transition-colors cursor-default">
                   <img src="https://www.google.com/s2/favicons?sz=64&domain=perplexity.ai" className="w-5 h-5 rounded-sm" alt="Comet" />
                   <span className="text-sm font-semibold">Comet</span>
