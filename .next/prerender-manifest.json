@@ -1,85 +1,11 @@
 {
   "version": 4,
-  "routes": {
-    "/design-kit": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/design-kit",
-      "dataRoute": "/design-kit.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/_not-found": {
-      "initialStatus": 404,
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/_not-found",
-      "dataRoute": "/_not-found.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    }
-  },
+  "routes": {},
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "78244e0ee025c12183d5171e435a6364",
-    "previewModeSigningKey": "a8c50a53fb5faf15e1be2ef23105c94f452b49392c9169dbe517efe3fabc4f8a",
-    "previewModeEncryptionKey": "db1401ab8a6d9f6cc51a364ab902e96e9c75a9105ecc396e7b063ebaa6ffb7a0"
+    "previewModeId": "91e819bd17b6c9739202325e462ba3da",
+    "previewModeSigningKey": "3d6399af26ef99126d60b8bd25098e7a68e0fec17b8490055f94f102aceee502",
+    "previewModeEncryptionKey": "42228af7b240c879dc7c559c79678fe6e895b4c6490dcd42c7115b39f0595bb3"
   }
 }

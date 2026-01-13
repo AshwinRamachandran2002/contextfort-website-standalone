@@ -41,20 +41,20 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* 3. Co-Founder & CEO (Green, transparent) */}
-      <div className="flex flex-col gap-4">
-        <div className="bg-transparent">
-          <span className="text-primary font-bold uppercase tracking-widest text-sm">
-            Co-Founder & CEO
-          </span>
+        {/* 3. Ashwin, Co-Founder (Green, transparent) */}
+        <div className="flex flex-col gap-4">
+          <div className="bg-transparent">
+            <span className="text-primary font-bold uppercase tracking-widest text-sm">
+              Ashwin, Co-Founder
+            </span>
+          </div>
+          <Button variant="outline" size="sm" asChild className="gap-2 max-w-fit">
+            <a href="/title.svg" download="ashwin-co-founder.svg">
+              <Download className="w-4 h-4" />
+              Download Ashwin, Co-Founder
+            </a>
+          </Button>
         </div>
-        <Button variant="outline" size="sm" asChild className="gap-2 max-w-fit">
-          <a href="/title.svg" download="title.svg">
-            <Download className="w-4 h-4" />
-            Download Title
-          </a>
-        </Button>
-      </div>
     </div>
   );
 }
