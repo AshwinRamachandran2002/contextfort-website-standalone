@@ -69,15 +69,17 @@ export default function LandingPage() {
               <a href="#how-it-works">How it works</a>
             </Button>
             <Button variant="ghost" asChild className="text-muted-foreground hover:text-primary transition-colors">
-              <a href="#features">Features</a>
+              <a href="/blog">Blog</a>
             </Button>
             <Button asChild className="bg-primary text-background hover:bg-primary/90 rounded-none transition-colors">
               <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2-LisBxMgnCRJ-LKKb-R3pFbF841mGLD05pQdMbsBW-4MJvb0Jy2ksFKVYziMHfKcECrF9yIHt" target="_blank" rel="noopener noreferrer">
                 Book a demo
               </a>
             </Button>
-            <Button className="bg-primary text-background hover:bg-primary/90 rounded-none transition-colors">
-              Try chrome extension
+            <Button asChild variant="outline" className="border-primary/50 hover:bg-primary/10 rounded-none transition-colors">
+              <a href="https://github.com/ContextFort-AI/ContextFort" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
             </Button>
           </div>
         </div>
@@ -128,15 +130,18 @@ export default function LandingPage() {
                       Book a demo
                     </a>
                   </Button>
-                  <Button 
-                    size="lg" 
+                  <Button
+                    size="lg"
                     variant="outline"
                     className="border-primary/50 hover:bg-primary/10 rounded-none px-8 text-foreground"
+                    asChild
                   >
-                    Try chrome extension
+                    <a href="https://chromewebstore.google.com/detail/contextfort/jkocglijncodiiljpdnoiegfcgeadllg" target="_blank" rel="noopener noreferrer">
+                      Try chrome extension
+                    </a>
                   </Button>
-                  <Button 
-                    size="lg" 
+                  <Button
+                    size="lg"
                     variant="outline"
                     className="border-primary/50 hover:bg-primary/10 rounded-none px-8 text-foreground"
                     asChild
@@ -159,7 +164,7 @@ export default function LandingPage() {
             >
               <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-2xl">
                 <iframe
-                  src="https://www.youtube.com/embed/TRc0z_qcze0?autoplay=1&mute=1&loop=1&playlist=TRc0z_qcze0&controls=0&modestbranding=1&rel=0"
+                  src="https://www.youtube.com/embed/1YtEGVZKMeo?autoplay=1&mute=0&loop=1&playlist=1YtEGVZKMeo&controls=1&modestbranding=1&rel=0"
                   allow="autoplay; encrypted-media"
                   allowFullScreen
                   className="absolute inset-0 h-full w-full"
@@ -171,156 +176,72 @@ export default function LandingPage() {
       </section>
 
       {/* How It Works */}
-      <section id="how-it-works" className="py-24 border-t border-white/5">
+      <section id="how-it-works" className="py-24 border-t border-white/5 bg-black">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">How it works</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              We analyze interaction behavior to separate AI agents from humans
-            </p>
+            <h2 className="text-4xl font-bold mb-4">How it works</h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: <Activity className="w-6 h-6" />,
-                title: "Event Micro-analysis",
-                desc: "Tracking millisecond precision in DOM interactions and event dispatch sequences."
-              },
-              {
-                icon: <Layers className="w-6 h-6" />,
-                title: "Agent Signature Bank",
-                desc: "Heuristic matching against known agent frameworks like Playwright, Puppeteer, and Selenium."
-              },
-              {
-                icon: <Cpu className="w-6 h-6" />,
-                title: "Behavioral Prediction",
-                desc: "Using lightweight on-device ML to predict if the next sequence of events matches 'agent intent'."
-              }
-            ].map((feature, i) => (
-              <Card key={i} className="bg-white/5 border-white/10 p-8 hover:border-primary/50 transition-colors group">
-                <div className="w-12 h-12 bg-primary/10 flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-background transition-colors">
-                  {feature.icon}
-                </div>
-                <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{feature.desc}</p>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Features Detail */}
-      <section id="features" className="py-24 bg-white/[0.02]">
-        <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="order-2 lg:order-1">
-              {/* Radar Visual */}
-              <div className="aspect-square relative flex items-center justify-center">
-                <div className="absolute inset-0 bg-primary/5 rounded-full animate-pulse" />
-                <div className="absolute inset-4 border border-white/5 rounded-full" />
-                <div className="absolute inset-12 border border-white/5 rounded-full" />
-                <div className="absolute inset-24 border border-primary/10 rounded-full" />
-                
-                {/* Rotating Scanner Line */}
-                <motion.div 
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
-                  className="absolute inset-0 z-10 origin-center"
-                  style={{ background: 'conic-gradient(from 0deg, transparent 0deg, oklch(0.7 0.2 150 / 0.2) 360deg)' }}
-                />
-
-                <div className="relative z-20 w-full max-w-md">
-                  <Card className="bg-black/40 backdrop-blur-xl border-white/10 overflow-hidden">
-                    <div className="p-4 border-b border-white/10 flex items-center justify-between bg-white/5">
-                      <div className="flex items-center gap-2">
-                        <Terminal className="w-4 h-4 text-primary" />
-                        <span className="text-xs font-mono font-bold tracking-widest">REALTIME_DETECTION_FEED</span>
-                      </div>
-                      <div className="flex gap-1">
-                        <div className="w-2 h-2 rounded-full bg-red-500/50" />
-                        <div className="w-2 h-2 rounded-full bg-yellow-500/50" />
-                        <div className="w-2 h-2 rounded-full bg-green-500/50" />
-                      </div>
-                    </div>
-                    <div className="p-4 font-mono text-[10px] space-y-3 min-h-[240px]">
-                      <AnimatePresence initial={false}>
-                        {activeLogs.map((log) => (
-                          <motion.div
-                            key={log.id}
-                            initial={{ opacity: 0, y: -10 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, scale: 0.95 }}
-                            className="flex items-center justify-between border-l-2 border-primary/20 pl-3 py-1"
-                          >
-                            <div className="flex flex-col">
-                              <span className="text-muted-foreground">[{log.timestamp}]</span>
-                              <div className="flex items-center gap-2">
-                                {log.type === "AGENT" ? <Bot className="w-3 h-3 text-red-400" /> : <User className="w-3 h-3 text-blue-400" />}
-                                <span className={log.type === "AGENT" ? "text-red-400 font-bold" : "text-blue-400"}>
-                                  {log.type}
-                                </span>
-                                <span className="text-white">{log.action}</span>
-                              </div>
-                            </div>
-                            <div className="text-right">
-                              <span className="block text-muted-foreground uppercase">Confidence</span>
-                              <span className="text-primary">{log.confidence}%</span>
-                            </div>
-                          </motion.div>
-                        ))}
-                      </AnimatePresence>
-                    </div>
-                  </Card>
-                </div>
-              </div>
+          {/* Visibility Section */}
+          <div className="mb-24">
+            <h2 className="text-3xl font-bold mb-8 text-center">ContextFort provides security teams with Visibility into agent sessions</h2>
+            <ul className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto space-y-3">
+              <li className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <span>When control is handed over</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <span>Which pages the agent visits during a session</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <span>What it does on each page (what was clicked and where text was input)</span>
+              </li>
+            </ul>
+            <div className="max-w-4xl mx-auto">
+              <img src="/visibility-demo.gif" alt="Visibility Demo" className="w-full rounded-lg border border-white/10" />
             </div>
-            <div className="order-1 lg:order-2">
-              <Badge className="bg-primary text-background mb-4">CAPABILITIES</Badge>
-              <h2 className="text-4xl font-bold mb-6 leading-tight">
-                <span className="md:whitespace-nowrap">Visibility & Controls</span> <span className="text-primary italic md:whitespace-nowrap">for Browser Agents</span>
-              </h2>
-              <ul className="space-y-4">
-                {[
-                  "Track AI agent events such as clicks, navigation etc.",
-                  "Detect cross-page context mixing",
-                  "Identify non-human browser behavior",
-                  "Session-level visibility into AI activity",
-                  "Block specific AI-driven actions"
-                ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3">
-                    <div className="w-5 h-5 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle2 className="w-3 h-3 text-primary" />
-                    </div>
-                    <span className="text-muted-foreground text-sm">{item}</span>
-                  </li>
-                ))}
-              </ul>
+          </div>
+
+          {/* Controls Section */}
+          <div>
+            <h2 className="text-3xl font-bold mb-8 text-center">ContextFort also offers Controls for security teams to act on based on what the visibility layer captures</h2>
+            <ul className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto space-y-3">
+              <li className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <span>Block specific actions on specific pages (e.g., prevent the agent from clicking "Submit" on email)</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <span>Block risky cross-site flows in a single session (e.g., block navigation to Atlassian after interacting with StackOverflow), or apply a stricter policy and block bringing any external context to Atlassian entirely</span>
+              </li>
+            </ul>
+            <div className="grid md:grid-cols-2 gap-8">
+              <img src="/first.gif" alt="Controls Demo 1" className="w-full rounded-lg border border-white/10" />
+              <img src="/second.gif" alt="Controls Demo 2" className="w-full rounded-lg border border-white/10" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Waitlist Section */}
-      <section id="waitlist" className="py-24 relative overflow-hidden">
+      {/* Enterprise CTA Section */}
+      <section id="enterprise" className="py-24 relative overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
         <div className="container mx-auto px-6 relative z-10 text-center">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Built for Enterprise Scale</h2>
             <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-              Deploy custom-tailored security controls and unified visibility across your entire organization.
+              If you need cloud/self-hosted management for an enterprise deployment, contact us.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-              <Input 
-                placeholder="Enter your work email" 
-                className="bg-white/5 border-white/10 h-12 rounded-none focus-visible:ring-primary"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <Button size="lg" className="bg-primary text-background hover:bg-primary/90 h-12 rounded-none px-8 font-bold">
-                Join Waitlist
-              </Button>
-            </div>
+            <Button
+              size="lg"
+              className="bg-primary text-background hover:bg-primary/90 h-12 rounded-none px-8 font-bold"
+              asChild
+            >
+              <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2-LisBxMgnCRJ-LKKb-R3pFbF841mGLD05pQdMbsBW-4MJvb0Jy2ksFKVYziMHfKcECrF9yIHt" target="_blank" rel="noopener noreferrer">
+                Book Demo
+              </a>
+            </Button>
           </div>
         </div>
       </section>
