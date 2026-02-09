@@ -5,8 +5,6 @@ import path from "node:path";
 const loaderPath = require.resolve('orchids-visual-edits/loader.js');
 
 const nextConfig: NextConfig = {
-  output: 'export',
-  trailingSlash: true,
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -20,7 +18,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  outputFileTracingRoot: path.resolve(__dirname, '../../'),
+  // outputFileTracingRoot: path.resolve(__dirname, '../../'), // disabled for Vercel
   typescript: {
     ignoreBuildErrors: true,
   },
