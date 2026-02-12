@@ -20,7 +20,9 @@ import {
   ShieldCheck,
   FileSearch,
   KeyRound,
-  ScanSearch
+  ScanSearch,
+  Box,
+  Send
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
@@ -89,6 +91,36 @@ const FEATURES = [
     ],
   },
   {
+    id: "exfil",
+    label: "Exfil Monitor",
+    icon: Send,
+    dotColor: "bg-green-500",
+    title: "Secrets Exfil Monitor",
+    subtitle: "Detects and blocks when sensitive env vars are transmitted to external servers.",
+    description: "The Exfil Monitor watches for commands that send environment variable values to external servers via curl, wget, or netcat. Unlike the Secrets Guard which blocks local exposure, the Exfil Monitor catches transmission — data leaving your machine. A configurable destination allowlist lets you whitelist trusted servers while blocking everything else.",
+    highlights: [
+      "Detects env var exfiltration via curl, wget, nc, and HTTP request tools",
+      "Configurable destination allowlist — block unknown servers, allow trusted ones",
+      "Dashboard management — add/remove allowed domains via the web UI",
+      "Works alongside Secrets Guard — one blocks local leaks, the other blocks transmission",
+    ],
+  },
+  {
+    id: "sandbox",
+    label: "Plugin Sandbox",
+    icon: Box,
+    dotColor: "bg-green-500",
+    title: "Plugin Sandbox",
+    subtitle: "Runtime isolation for MCP plugin processes — env scrubbing, FS blocklist, and network logging.",
+    description: "Plugins run as separate Node.js processes, and our hook loads in every one of them via NODE_OPTIONS. The Plugin Sandbox detects plugin spawns and strips all environment variables except the bare minimum needed to run (PATH, HOME, NODE_OPTIONS, etc.). Inside the sandboxed process, reads to sensitive directories like ~/.ssh, ~/.aws, and ~/.config are blocked, and all outbound network requests are logged.",
+    highlights: [
+      "Env scrubbing at spawn time — secrets never enter the plugin process (OS-level, un-bypassable)",
+      "FS blocklist — blocks reads to ~/.ssh, ~/.aws, ~/.gnupg, ~/.config, and 8 more sensitive paths",
+      "Network logging — all outbound HTTP/HTTPS/fetch requests from plugins are logged to the dashboard",
+      "Smart re-scrub prevention — plugin child processes preserve their own env vars (e.g. CAMOFOX_PORT)",
+    ],
+  },
+  {
     id: "dashboard",
     label: "Security Dashboard",
     icon: ShieldCheck,
@@ -107,10 +139,54 @@ const FEATURES = [
 
 const CHANGELOGS = [
   {
+    version: "0.1.13",
+    date: "Feb 11, 2026",
+    summary: "Runtime plugin sandbox — env scrubbing, FS blocklist, and network logging for MCP plugin processes.",
+    latest: true,
+    features: [
+      { text: "Plugin Sandbox — three-layer runtime isolation for MCP plugin processes (env scrubbing, FS blocklist, network logging)" },
+      { text: "Env scrubbing at spawn time — strips all env vars except ~12 safe ones before plugin processes start (OS-level, un-bypassable)" },
+      { text: <>FS blocklist — blocks sandboxed plugin reads to <code className="text-foreground text-xs bg-white/5 px-1.5 py-0.5 rounded">~/.ssh</code>, <code className="text-foreground text-xs bg-white/5 px-1.5 py-0.5 rounded">~/.aws</code>, <code className="text-foreground text-xs bg-white/5 px-1.5 py-0.5 rounded">~/.gnupg</code>, <code className="text-foreground text-xs bg-white/5 px-1.5 py-0.5 rounded">~/.config</code>, and 7 more sensitive paths</> },
+      { text: "Network logging — all outbound HTTP/HTTPS/fetch requests from sandboxed plugins are logged to the dashboard" },
+      { text: "Dashboard — new Plugin Sandbox card on home page and dedicated sandbox page with filterable event table" },
+    ],
+    improvements: [
+      "Smart re-scrub prevention — already-sandboxed processes skip env scrubbing so plugins can pass their own env vars to children (e.g. CAMOFOX_PORT)",
+      "Plugin detection covers node, npx, tsx, bun, and direct path invocations under ~/.claude/plugins/",
+      "FS hooks extended to guard statSync, existsSync, readdirSync, accessSync, and readFile (not just readFileSync)",
+    ],
+  },
+  {
+    version: "0.1.12",
+    date: "Feb 11, 2026",
+    summary: "Plugin code scanning and secrets scanner bugfix.",
+    features: [
+      { text: <>Plugin scanner — scans entire plugin directories (not just skills/) under <code className="text-foreground text-xs bg-white/5 px-1.5 py-0.5 rounded">~/.claude/plugins/</code> for prompt injection via cloud Haiku</> },
+      { text: "Plugin-type badges in dashboard — distinguishes between skills and plugins in the scanner UI" },
+    ],
+    improvements: [
+      "Fixed false positives in secrets scanner output redaction",
+      "Dashboard shows plugin-specific status and activity in Skill & Plugin Scanner page",
+    ],
+  },
+  {
+    version: "0.1.10",
+    date: "Feb 10, 2026",
+    summary: "Unblock command and exfil destination allowlist.",
+    features: [
+      { text: <>Dashboard unblock button — removes active blocks (skill/prompt injection) directly from the web UI without restarting</> },
+      { text: <>Exfil destination allowlist — <code className="text-foreground text-xs bg-white/5 px-1.5 py-0.5 rounded">openclaw-secure exfil-allow add &lt;domain&gt;</code> to whitelist trusted servers</> },
+      { text: "Exfil Guard — detects env var transmission to external servers via curl, wget, and nc" },
+    ],
+    improvements: [
+      "Allowlist managed via dashboard or CLI with enable/disable toggle",
+      "Exfil events shown in dedicated dashboard page with blocked/passed filtering",
+    ],
+  },
+  {
     version: "0.1.8",
     date: "Feb 10, 2026",
     summary: "Local security dashboard, audit logging, and output secret redaction.",
-    latest: true,
     features: [
       { text: <><code className="text-foreground text-xs bg-white/5 px-1.5 py-0.5 rounded">openclaw-secure dashboard</code> — localhost web UI showing all security events, guard status, and what data is sent to servers</> },
       { text: <>Local audit logging — every command intercepted is logged to <code className="text-xs bg-white/5 px-1.5 py-0.5 rounded">~/.contextfort/local_only_logs/</code> (never sent to any server)</> },
@@ -216,7 +292,7 @@ function FeaturesPanel() {
 }
 
 function ChangelogPanel() {
-  const [activeVersion, setActiveVersion] = React.useState("0.1.8");
+  const [activeVersion, setActiveVersion] = React.useState("0.1.13");
   const changelog = CHANGELOGS.find(c => c.version === activeVersion) || CHANGELOGS[0];
 
   return (
@@ -412,14 +488,12 @@ export default function LandingPage() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="flex-1 w-full lg:max-w-[50%]"
             >
-              <div className="border border-white/10 rounded-lg overflow-hidden bg-white/5">
-                <video
-                  src="/demo.mov"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-auto"
+              <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-2xl">
+                <iframe
+                  src="https://www.youtube.com/embed/UxyFX1y8880?autoplay=1&mute=0&loop=1&playlist=UxyFX1y8880&controls=1&modestbranding=1&rel=0"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                  className="absolute inset-0 h-full w-full"
                 />
               </div>
             </motion.div>
